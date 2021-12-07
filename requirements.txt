@@ -1,0 +1,12 @@
+Pandas
+Flask
+gunicorn
+jinja2
+numpy
+Scikit-learn
+Scipy
+sqlalchemy
+Click
+Greenlet
+Markupsafe
+
