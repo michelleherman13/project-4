@@ -25,11 +25,14 @@ def generator():
 def get_recommended():
     user_input = request.json['data']
 
-    game = user_input['game']
-    # platform = user_input['platform']
-    # score = float(user_input['score'])
+    if user_input['game'] != "":
+        game = user_input['game']
+        recommender  = model.get_recommended(game)
+    else:
+        platform = user_input['platform']
+        score = float(user_input['score'])
+        recommender  = model.get_recommended2(platform, score)
 
-    recommender  = model.get_recommended(game)
 
     return recommender
 
