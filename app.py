@@ -13,6 +13,11 @@ def tableau():
     # Return template and data
     return render_template("tableau.html")
 
+@app.route("/generator")
+def generator():
+    #Return template and data
+    return render_template("generator.html")
+
 # run the application
 if __name__ == "__main__":
     app.run(debug=True)
