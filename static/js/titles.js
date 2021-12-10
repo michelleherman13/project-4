@@ -603,4 +603,4 @@ function autocomplete(inp, arr) {
   });
   }
 
-  autocomplete(document.getElementById("myInput"), titles);
+  autocomplete(document.getElementById("game"), titles);

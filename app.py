@@ -1,7 +1,10 @@
-from flask import Flask
-from flask import render_template
+from flask import Flask, render_template, request
+import json
+from model_pred import ModelPred
+
 # creates a Flask application, named app
 app = Flask(__name__)
+model = ModelPred()
 
 # a route where we will display a welcome message via an HTML template
 @app.route("/")
@@ -17,6 +20,30 @@ def tableau():
 def generator():
     #Return template and data
     return render_template("generator.html")
+
+@app.route("/get_recommended", methods=["POST"])
+def get_recommended():
+    user_input = request.json['data']
+
+    game = user_input['game']
+    # platform = user_input['platform']
+    # score = float(user_input['score'])
+
+    recommender  = model.get_recommended(game)
+
+    return recommender
+
+@app.after_request
+def add_header(r):
+    """
+    Add headers to both force latest IE rendering engine or Chrome Frame,
+    and also to cache the rendered page for 10 minutes.
+    """
+    r.headers['X-UA-Compatible'] = 'IE=Edge,chrome=1'
+    r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate, public, max-age=0"
+    r.headers["Pragma"] = "no-cache"
+    r.headers["Expires"] = "0"
+    return r
 
 # run the application
 if __name__ == "__main__":
