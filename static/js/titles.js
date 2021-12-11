@@ -507,8 +507,6 @@ var titles = ['grand-theft-auto-v','grand-theft-auto-v', 'grand-theft-auto-vice-
  'metal-gear-solid-digital-graphic-novel' ,'gotcha-force']
  
  
- console.log(titles.replaceAll('-', ''));
-
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
