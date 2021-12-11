@@ -21,6 +21,11 @@ def generator():
     #Return template and data
     return render_template("generator.html")
 
+@app.route("/data")
+def generator():
+    #Return template and data
+    return render_template("data.html")
+
 @app.route("/get_recommended", methods=["POST"])
 def get_recommended():
     user_input = request.json['data']
