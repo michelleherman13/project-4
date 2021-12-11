@@ -33,13 +33,15 @@ def get_recommended():
     if user_input['game'] != "":
         game = user_input['game']
         recommender  = model.get_recommended(game)
+        return recommender
     else:
         platform = user_input['platform']
         score = float(user_input['score'])
         recommender  = model.get_recommended2(platform, score)
+        return recommender
 
 
-    return recommender
+    # return recommender
 
 @app.after_request
 def add_header(r):

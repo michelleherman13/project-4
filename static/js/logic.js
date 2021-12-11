@@ -1,17 +1,20 @@
 $(document).ready(function() {
-    console.log("Page Loaded", $("#game").val());
-
     $("#gameSubmit").click(function() {
+        $('#results').remove();
         get_recommended();
-        console.log(game)
+        // console.log($("#game").val())
     });
 
     $("#other").click(function() {
+        $('#results').remove();
         get_recommended();
+        console.log($("#score").val())
+        console.log($("#platform").val())
     });
 });
 
 function get_recommended() {
+
     var game = $("#game").val();
     var platform = $("#platform").val();
     var score = $("#score").val();
@@ -33,11 +36,10 @@ function get_recommended() {
 
             console.log(game)
 
-            $.each(game , function(index, item) { 
-                console.log("Game: " + item["game"]);
-                console.log("Critic_Score: " + item["Critic_Score"]);
-            });
-            $('#results').remove();
+            // $.each(game , function(index, item) { 
+            //     console.log("Game: " + item["game"]);
+            //     console.log("Critic_Score: " + item["Critic_Score"]);
+            // });
             let table = '<thead id="results"><tr><th style="color: #fff;background-color:#7166d4">Name</th><th style="color: #fff;background-color:#7166d4">Critic Score</th><th style="color: #fff;background-color:#7166d4">Platform</th><th style="color: #fff;background-color:#7166d4">ESRB Rating</th></tr></thead><tbody>';
 
             $.each(game, function(index, item) { 
@@ -57,5 +59,5 @@ function get_recommended() {
             alert("Error: " + errorThrown);
         }
     });
-
+    document.getElementById("userForms").reset();
 }
