@@ -11,6 +11,10 @@ model = ModelPred()
 def home():
     return render_template("index.html")
 
+@app.route("/index")
+def index():
+    return render_template("index.html")
+
 @app.route("/tableau")
 def tableau():
     # Return template and data
