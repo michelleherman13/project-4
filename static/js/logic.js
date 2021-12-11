@@ -37,14 +37,14 @@ function get_recommended() {
                 console.log("Game: " + item["game"]);
                 console.log("Critic_Score: " + item["Critic_Score"]);
             });
-
-            let table = '<thead><tr><th style="color: #fff;background-color:#7166d4">Name</th><th style="color: #fff;background-color:#7166d4">Critic Score</th><th style="color: #fff;background-color:#7166d4">Global Sales</th><th style="color: #fff;background-color:#7166d4">Distance</th></tr></thead><tbody>';
+            $('#results').remove();
+            let table = '<thead id="results"><tr><th style="color: #fff;background-color:#7166d4">Name</th><th style="color: #fff;background-color:#7166d4">Critic Score</th><th style="color: #fff;background-color:#7166d4">Platform</th><th style="color: #fff;background-color:#7166d4">ESRB Rating</th></tr></thead><tbody>';
 
             $.each(game, function(index, item) { 
                 table += '<tr><td style="background-color:#efefef">'+item["game"]+'</td>';
                 table += '<td style="background-color:#efefef">'+item["Critic_Score"]+'</td>';
-                table += '<td style="background-color:#efefef">'+item["Global_Sales"]+'</td>';
-                table += '<td style="background-color:#efefef">'+item["Distance"]+'</td></tr>';
+                table += '<td style="background-color:#efefef">'+item["Platform"]+'</td>';
+                table += '<td style="background-color:#efefef">'+item["ESRB_Rating"]+'</td></tr>';
             });
 
             table += '</tbody>';
