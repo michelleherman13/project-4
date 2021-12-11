@@ -47,7 +47,8 @@ class ModelPred():
         game_row = df[(df[platform] == 1) & (df['Critic_Score'] >= score)].sample(1)
         game_row = game_row.drop(["game"], axis=1)
         game_row = game_row.to_numpy()
-        platform = platform.strip('Platform_')
+        platform = platform.replace("Platform_", "")
+
 
         distances, indices = model_knn.kneighbors(game_row, n_neighbors = n_neighbors)
         result = info_df.iloc[indices.flatten()]#.to_json(orient='records')
