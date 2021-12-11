@@ -65,7 +65,7 @@ margin: 0;
 }
 
 span.color {
-color: #7166d4;
+color: #050212;
 }
 
 body > section,
@@ -76,7 +76,7 @@ padding: 70px 0;
 .sec-title {}
 
 .sec-title h2 {
-color: #7166d4;
+color: #050212;
 font-size: 28px;
 font-weight: 800;
 text-transform: uppercase;
@@ -631,7 +631,9 @@ Contact Us
 
 
 .footer {
-background-color: #7166d4;
+background-color: #050212;
+background-image: url("/static/img/istockphoto-1190580005-612x612.jpg");
+background-size: 100% 100%;
 border-top: 5px solid #062033;
 color: #fff;
 }
