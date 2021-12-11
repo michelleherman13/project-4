@@ -505,6 +505,9 @@ var titles = ['grand-theft-auto-v','grand-theft-auto-v', 'grand-theft-auto-vice-
  'vampire-rain-altered-species' ,'disgaea-1-complete' ,'warriors-orochi-2',
  'virtua-striker-2002' ,'grimgrimoire',
  'metal-gear-solid-digital-graphic-novel' ,'gotcha-force']
+ 
+ 
+ console.log(titles.replaceAll('-', ''));
 
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
