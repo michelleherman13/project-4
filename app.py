@@ -21,7 +21,7 @@ def generator():
     #Return template and data
     return render_template("generator.html")
 
-@app.route("/Directory")
+@app.route("/directory")
 def data():
     #Return template and data
     return render_template("table.html")
