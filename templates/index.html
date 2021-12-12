@@ -18,8 +18,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
 	
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> -->
 
 		<!-- CSS
 		================================================== -->
@@ -52,9 +55,9 @@
         <!-- 
         Fixed Navigation
         ==================================== -->
-        <header id="navigation" class="navbar-fixed-top navbar">
+        <header id="navigation" class="navbar-fixed-top navbar-left">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header navbar-collapse">
                     <!-- responsive nav button -->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -63,7 +66,7 @@
 					<!-- /responsive nav button -->
 					
 					<!-- logo -->
-                    <a class="navbar-brand" href="#body">
+                    <a class="navbar-brand navbar-left" href="#body">
 						<h1 id="logo">
 							<img src="" alt="">
 						</h1>
@@ -72,27 +75,28 @@
                 </div>
 
 				<!-- main page NAVIGATION -->
-				<nav class="collapse navbar-collapse navbar-right" role="navigation">
-					<ul id="nav" class="nav navbar-nav">
+				<nav class="collapse navbar-collapse" role="navigation">
+					<ul id="nav" class="nav navbar-left">
 					   <li><a href="/">Home</a></li>
-                        <li><a href="#background">Background</a></li>
 
                     </ul>
 					</nav>
 					
-				<!-- /main nav -->
+    			<!-- /main nav dropdown -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-					  <li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
+					<ul class="nav navbar-nav navbar-left">    
+                        <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 						 <li><a href="./tableau">Tableau</a></li>
 						 <li><a href="./generator">Recommendor</a></li>
 						 <li><a href="./directory">Directory</a></li>
+	
 
 		
 				
         </header>
+
         <!--
         End Fixed Navigation
         ==================================== -->
@@ -197,265 +201,7 @@
         End Features
         ==================================== -->
 		
-		
-        	
-        <!--
-        Recommendor Section
-        ==================================== -->
-<!-- 	<br></br>
-	<section id="model" class="model">	
-<img src="/static/img/viz1.png" alt="viz1" class="center-block">
 
-	<br></br>
-	<div class="container">
-	<h1>Video Game Recommendor</h1>
-	<br></br>
-		<form class="form-horizontal" role="form">
-		  <div class="form-group">
-	
-		  <div class="form-group">
-			<label for="critic-score" class="col-sm-4 control-label">Critic Score:</label>
-			<div class="col-sm-4">
-			<select class="form-control inputstl" id="critic-score">
-			  <option>example</option>
-			  <option>example</option>
-			</select>           -->
-			  
-<!-- 			</div>
-		  </div>      
-		  <div class="form-group">
-			<label for="ESRB" class="col-sm-4 control-label">ESRB Rating:</label>
-			<div class="col-sm-4">
-			<select class="form-control inputstl" id="ESRB">
-			  <option>E</option>
-			  <option>E10</option>
-			  <option>M</option>
-			  <option>T</option>
-			</select>   
-		  </div>
-		  </div>
-		  <div class="form-group">
-			<label for="genre" class="col-sm-4 control-label">Genre:</label>
-			<div class="col-sm-4">
-			<select class="form-control inputstl" id="genre">
-			  <option>Action</option>
-			  <option>Action-Adventure</option>
-			  <option>Adventure</option>
-			  <option>Board Games</option>
-			  <option>Fighting</option>
-			  <option>Misc.</option>
-			  <option>MMO</option>
-			  <option>Music</option>
-			  <option>Party</option>
-			  <option>Platform</option>
-			  <option>Puzzle</option>
-			  <option>Racing</option>
-			  <option>Role-Playing</option>
-			  <option>Sandbox</option>
-			  <option>Shooter</option>
-			  <option>Simulation</option>
-			  <option>Sports</option>
-			  <option>Strategy</option>
-			</select>   
-		  </div>
-		  </div>
-		  <div class="form-group">
-			<label for="console" class="col-sm-4 control-label">Console:</label>
-			<div class="col-sm-4">
-			<select class="form-control inputstl" id="console">
-			  <option>Nintendo 3DS</option>
-			  <option>Dreamcast (DC)</option>
-			  <option>Nintendo DS</option>
-			  <option>Gameboy</option>
-			  <option>Gameboy Advance</option>
-			  <option>Gameboy Color</option>
-			  <option>Gamecube</option>
-			  <option>Nintendo 64</option>
-			  <option>Nintendo Switch</option>
-			  <option>Playstation 1</option>
-			  <option>Playstation 2</option>
-			  <option>Playstation 3</option>
-			  <option>Playstation 4</option>
-			  <option>PlayStation Portable (PSN)</option>
-			  <option>PlayStation Vita (PSV)</option>
-			  <option>Sega Saturn (SAT)</option>
-			  <option>Wii</option>
-			  <option>WiiU</option>
-			  <option>Xbox 360</option>
-			  <option>Xbox</option>
-			  <option>Xbox One</option>
-
-			</select>   
-		</div>
-		</div>   <div class="form-group">
-		  <label for="publisher" class="col-sm-4 control-label">Publisher:</label>
-		  <div class="col-sm-4">
-		  <select class="form-control inputstl" id="publisher">
-			<option>2K Games</option>
-			<option>2K Sports</option>
-			<option>2K Sports</option>
-			<option>505 Games</option>
-			<option>989 Studios</option>
-			<option>2K Sports</option>
-			<option>Acclaim Entertainment</option>
-			<option>Activision</option>
-			<option>2K Sports</option>
-			<option>Agetec</option>
-			<option>Askys Games</option>
-			<option>AQ Interactive</option>
-			<option>Arc System Works</option>
-			<option>ASCII Entertainment</option>
-			<option>Atari</option>
-			<option>Atlus</option>
-			<option>Bandai</option>
-			<option>Bandai Namco Entertainment</option>
-			<option>Bandai Namco Entertainment</option>
-			<option>Capcom</option>
-			<option>Blizzard Entertainment</option>
-			<option>CDV Software Entertainment</option>
-			<option>City Interactive</option>
-			<option>Codemasters</option>
-			<option>D3 Publisher</option>
-			<option>Deep Silver</option>
-			<option>Disney Interactive Studios</option>
-			<option>EA Sports</option>
-			<option>Eidos Interactive</option>
-			<option>Electronic Arts</option>
-			<option>Enix</option>
-			<option>Global Star Software</option>
-			<option>GT Interactive</option>
-			<option>Hello Games</option>
-			<option>Hudson Soft</option>
-			<option>Ignition Entertainment</option>
-			<option>JoWood Productions</option>
-			<option>Hudson Soft</option>
-			<option>Kalypso</option>
-			<option>KOEI</option>
-			<option>Koei Tecmo</option>
-			<option>Konami</option>
-			<option>Konami Digital Entertainment</option>
-			<option>LucasArts</option>
-			<option>Marvelous Interactive</option>
-			<option>Maxis</option>
-			<option>Microsoft</option>
-			<option>Microsoft Game Studios</option>
-			<option>Midway Games</option>
-			<option>Mojang</option>
-			<option>Namco</option></option>
-			<option>Namco Bandai</option>
-			<option>Namco Bandai Games</option>
-			<option>Natsume</option>
-			<option>Nintendo</option>
-			<option>Nippon Ichi Software</option>
-			<option>NIS America</option>
-			<option>Ocean</option>
-			<option>Publisher</option>
-			<option>RedOctane</option>
-			<option>Rockstar Games</option>
-			<option>Sega</option>
-			<option>Sony Computer Entertainment</option>
-			<option>Sony Computer Entertainment America</option>
-			<option>Sony Interactive Entertainment</option>
-			<option>Sony Online Entertainment</option>
-			<option>SouthPeak Interactive</option>
-			<option>Square</option>
-			<option>Square EA</option>
-			<option>Square Enix</option>
-			<option>Taito</option></option>
-			<option>Take-Two Interactive</option>
-			<option>Tecmo</option>
-			<option>THQ</option></option>
-			<option>Touchstone</option>
-			<option>Ubisoft</option></option>
-			<option>Universal Interactive</option>
-			<option>Valve</option></option>
-			<option>Valve Corporation</option>
-			<option>Warner Bros. Interactive</option>
-			<option>Warner Bros. Interactive Entertainment</option>
-			<option>Working Designs</option>
-			<option>Xseed Games</option>
-			</select>   
-		</div>
-		</div>
-	   <div class="form-group">
-			  <label for="year" class="col-sm-4 control-label">Year:</label>
-			  <div class="col-sm-4">
-			  <select class="form-control inputstl" id="year">
-				<option>1995</option>
-				<option>1996</option>
-				<option>1996</option>
-				<option>1997</option>
-				<option>1998</option>
-				<option>1999</option>
-				<option>2000</option>
-				<option>2001</option>
-				<option>2002</option>
-				<option>2003</option>
-				<option>2004</option>
-				<option>2005</option>
-				<option>2006</option>
-				<option>2007</option>
-				<option>2008</option>
-				<option>2009</option>
-				<option>2010</option>
-				<option>2011</option>
-				<option>2012</option>
-				<option>2013</option>
-				<option>2014</option>
-				<option>2015</option>
-				<option>2016</option>
-				<option>2017</option>
-				<option>2018</option>
-
-			  </select>   
-			  <br> </br>
-		  
-			</div>
-		  </div>  
-		  
-		  <div class="form-group">
-			<label for="Title" class="col-sm-4 control-label">Game Title</label>
-		  <form autocomplete="off" action="/action_page.php">
-			<div class="col-sm-4 form-group ">
-			<div class="autocomplete col-sm-4" style="width:300px;">
-			  <input id="myInput" type="text" name="gameTitles" placeholder="start typing...">
-			</div>
-		  </form>
-		  
-	<br> 
-	</br>
-	<br> 
-	</br>
-
-		  <div class="form-group">
-			<div class="col-sm-offset-2 col-sm-4">
-			  <button type="submit" class="btn btn-lg btn-block">Get Recommendation</button>
-			</div>
-		  </div>
-		</form>
-	   </div> 
-	   <br> </br> --> -->
-	
-	<!--
-	End Recommendor section
-	==================================== -->
-
-	
-	</section>
-
-	
-	<!--
-	TESTING SECTION
-	==================================== -->
-	
-
-<!--Make sure the form has the autocomplete function switched off:-->
-
-	
-
-	<!--
-       	END TESTING SECTION
-        ==================================== -->	
 
 	
 		<!--
@@ -557,9 +303,6 @@
         <script src="/static/js/jquery-countTo.js"></script>
 		<!-- jquery.appear -->
         <script src="/static/js/jquery.appear.js"></script>
-		<!-- Contact form validation -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 		<!-- jquery easing -->
         <script src="/static/js/jquery.easing.min.js"></script>
 		<!-- jquery easing -->

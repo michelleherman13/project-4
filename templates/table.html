@@ -5,13 +5,6 @@
 <!--[if gt IE 8]><!-->
 <html lang="en" class="no-js">
 <!--<![endif]-->
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
 
 <head>
     <!-- meta charec set -->
@@ -29,8 +22,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> -->
 
     <!-- CSS
 		================================================== -->
@@ -63,46 +59,54 @@
     <!-- 
         Fixed Navigation
         ==================================== -->
-    <header id="navigation" class="navbar-fixed-top navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <!-- responsive nav button -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <i class="fa fa-bars fa-2x"></i>
-                </button>
-                <!-- /responsive nav button -->
+      <!-- 
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header navbar-collapse">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+                    <a class="navbar-brand navbar-left" href="./">
+						<h1 id="logo">
+							<img src="" alt="">
+						</h1>
+					</a>
+					<!-- /logo -->
+                </div>
 
-                <!-- logo -->
-                <a class="navbar-brand" href="./">
-                    <h1 id="logo">
-                        <img src="" alt="">
-                    </h1>
-                </a>
-                <!-- /logo -->
-            </div>
+				<!-- main page NAVIGATION -->
+				<nav class="collapse navbar-collapse" role="navigation">
+					<ul id="nav" class="nav navbar-left">
+					   <li><a href="/">Home</a></li>
 
-            <!-- main page NAVIGATION -->
-            <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                <ul id="nav" class="nav navbar-nav">
-                   <li><a href="/">Home</a></li>
-                </ul>
-            </nav>
+                    </ul>
+					</nav>
+					
+    			<!-- /main nav dropdown -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-left">    
+                        <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						 <li><a href="./tableau">Tableau</a></li>
+						 <li><a href="./generator">Recommendor</a></li>
+						 <li><a href="./directory">Directory</a></li>
+	
 
-            <!-- /main nav -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                            aria-expanded="false">Dropdown<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="./tableau">Tableau</a></li>
-                            <li><a href="./generator">Recommendor</a></li>
-                            <li><a href="./directory">Directory</a></li>
+		
+				
+        </header>
 
-
-
-    </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
     <!--
         End Fixed Navigation
         ==================================== -->
@@ -120,7 +124,7 @@
                 <div class="item active" style="background-image:url('/static/img/blackpurp_banner.jpg');">
                     <div class="carousel-caption">
                         <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">
-                            Videogame<span> Directory</span>!</h2>
+                            Videogame<span> Data Center</span>!</h2>
                         <h3 data-wow-duration="1000ms" class="wow slideInLeft animated">
                             <!-- <span class="color">/see</span> the breakdown</h3>				 -->
 
@@ -134,104 +138,30 @@
         </div>
     </section>
 
-    <head>
-        <!-- meta charec set -->
-        <meta charset="utf-8">
-        <!-- Always force latest IE rendering engine or request Chrome Frame -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <!-- Page Title -->
-        <title>Find a Videogame</title>
-        <!-- Meta Description -->
-        <meta name="description" content="Blue One Page Creative HTML5 Template">
-        <meta name="keywords"
-            content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
-        <meta name="author" content="Muhammad Morshed">
-        <!-- Mobile Specific Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Google Font -->
-
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet'
-            type='text/css'>
-
-        <!-- CSS
-		================================================== -->
-        <!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="/static/css/font-awesome.min.css">
-        <!-- Twitter Bootstrap css -->
-        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-        <!-- jquery.fancybox  -->
-        <link rel="stylesheet" href="/static/css/jquery.fancybox.css">
-        <!-- animate -->
-        <link rel="stylesheet" href="/static/css/animate.css">
-        <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="/static/css/main.css">
-        <!-- media-queries -->
-        <link rel="stylesheet" href="/static/css/media-queries.css">
-
-        <!-- Modernizer Script for old Browsers -->
-        <script src="/static/js/modernizr-2.6.2.min.js"></script>
-
-    </head>
-
-    <body id="body">
-
         <!-- preloader -->
         <div id="preloader">
             <img src="/static/img/preloader.gif" alt="Preloader">
         </div>
         <!-- end preloader -->
 
-        <!-- 
-        Fixed Navigation
-        ==================================== -->
-        <header id="navigation" class="navbar">
-            <div class="container">
-                <div class="navbar-header navbar-right">
-                    <!-- responsive nav button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="navbar-brand">Toggle navigation</span>
-                        <i class="fa fa-bars fa-2x"></i>
-                    </button>
-                    <!-- /responsive nav button -->
+      
+        <section>
+            <style>
 
-                    <!-- logo -->
-                    <a class="navbar-right navbar-btn" href="./index.html">home</a>
-
-                    <!-- /logo -->
-                </div>
-
-
-                <!-- /main nav -->
-
-            </div>
-        </header>
-        <br></br>
-        <!--
-        End Fixed Navigation
-        ==================================== -->
-
-        <!--
-       Begin Tableau
-        ==================================== -->
-        <style>
-
-            #ABC {
-              background-color: #050212;
-              height: 100%;
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-            }
-        
-            body{
-              background: #050212;
-              margin: 0;
-
-            } 
+                #ABC {
+                  background-color: #050212;
+                  height: 100%;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                }
             
-        
+                body{
+                  background: #050212;
+                  margin: 0;
+                } 
+                
             </style>
         <div class='tableauPlaceholder' id='viz1639241533417' style='display:block;margin:0 auto;' ><object class='tableauViz'  style='display:none;'>
           <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> 
@@ -249,6 +179,7 @@
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                   
           vizElement.parentNode.insertBefore(scriptElement, vizElement);                
           </script>
+  
         <!--
         End Tableau
         ==================================== -->
@@ -262,7 +193,7 @@
             <div class="container">
                 <div class="row">
 
-                    <img src="/static/img/GitHub-Mark-64px.png" alt="github">
+                    <img src="/static/img/GitHub-Mark-Light-64px.png" alt="github">
                     <a class="btn btn-secondary btn-lg" href="https://github.com/michelleherman13/project-4"
                         role="button">Project Repository</a>
 
@@ -305,9 +236,6 @@
         <script src="/static/js/jquery-countTo.js"></script>
         <!-- jquery.appear -->
         <script src="/static/js/jquery.appear.js"></script>
-        <!-- Contact form validation -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
         <!-- jquery easing -->
         <script src="/static/js/jquery.easing.min.js"></script>
         <!-- jquery easing -->
@@ -325,6 +253,17 @@
         </script>
         <!-- Custom Functions -->
         <script src="/static/js/custom.js"></script>
+
+
+        <script>
+            $(document).ready(function() {
+                
+                $("li").click(function() {
+                    $("a")[0].click();
+                });                            
+            });
+
+        </script>
 
         <script type="/static/text/javascript">
 			$(function(){

@@ -25,7 +25,10 @@
                <!-- Mobile Specific Meta -->
                <meta name="viewport" content="width=device-width, initial-scale=1">
                <!-- Google Font -->
-               <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+			   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+			   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+			   <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+               <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> -->
                <!-- CSS
                   ================================================== -->
                <!-- Fontawesome Icon font -->
@@ -53,43 +56,50 @@
                   <img src="/static/img/preloader.gif" alt="Preloader">
                </div>
                <!-- end preloader -->
-               <!-- 
-                  Fixed Navigation
-                  ==================================== -->
-               <header id="navigation" class="navbar-fixed-top navbar">
-                  <div class="container">
-                  <div class="navbar-header">
-                     <!-- responsive nav button -->
-                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                     <span class="sr-only">Toggle navigation</span>
-                     <i class="fa fa-bars fa-2x"></i>
-                     </button>
-                     <!-- /responsive nav button -->
-                     <!-- logo -->
-                     <a class="navbar-brand" href="#body">
-                        <h1 id="logo">
-                           <img src="/" alt="">
-                        </h1>
-                     </a>
-                     <!-- /logo -->
-                  </div>
-                  <!-- main page NAVIGATION -->
-                  <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                     <ul id="nav" class="nav navbar-nav">
-                        <li><a href="/">Home</a></li>
-                     </ul>
-                  </nav>
-                  <!-- /main nav -->
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
-                  <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-						<li><a href="./tableau">Tableau</a></li>
-						<li><a href="./generator">Recommendor</a></li>
-						<li><a href="./directory">Directory</a></li>
-				  	 </ul>
-               </header>
+                     <!-- 
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header navbar-collapse">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+                    <a class="navbar-brand navbar-left" href="./">
+						<h1 id="logo">
+							<img src="" alt="">
+						</h1>
+					</a>
+					<!-- /logo -->
+                </div>
+
+				<!-- main page NAVIGATION -->
+				<nav class="collapse navbar-collapse" role="navigation">
+					<ul id="nav" class="nav navbar-left">
+					   <li><a href="/">Home</a></li>
+
+                    </ul>
+					</nav>
+					
+    			<!-- /main nav dropdown -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-left">    
+                        <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						 <li><a href="./tableau">Tableau</a></li>
+						 <li><a href="./generator">Recommendor</a></li>
+						 <li><a href="./directory">Directory</a></li>
+	 </header>
+
+        <!--
+        End Fixed Navigation
+        ==================================== -->
 
 			   <style>
 
@@ -368,7 +378,7 @@
                <footer id="footer" class="footer">
                <div class="container">
                <div class="row">
-               <img src="/static/img/GitHub-Mark-64px.png" alt="github">
+               <img src="/static/img/GitHub-Mark-Light-64px.png" alt="github">
                <a class="btn btn-secondary btn-lg" href="https://github.com/michelleherman13/project-4" role="button">Project Repository</a>			
                </div>
                </div>
@@ -407,9 +417,6 @@
                <script src="/static/js/jquery-countTo.js"></script>
                <!-- jquery.appear -->
                <script src="/static/js/jquery.appear.js"></script>
-               <!-- Contact form validation -->
-               <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-               <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
                <!-- jquery easing -->
                <script src="/static/js/jquery.easing.min.js"></script>
                <!-- jquery easing -->
