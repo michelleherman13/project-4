@@ -204,11 +204,11 @@
 						 <div class="col-sm-4">
 							<select class="form-control inputstl" id="platform">
 							   <option value="3DS">Nintendo 3DS</option>
-							   <option value="DC">Dreamcast (DC)</option>
+							   <!-- <option value="DC">Dreamcast (DC)</option> -->
 							   <option value="DS">Nintendo DS</option>
-							   <option value="GB">Gameboy</option>
+							   <!-- <option value="GB">Gameboy</option> -->
 							   <option value="GBA">Gameboy Advance</option>
-							   <option value="GBC">Gameboy Color</option>
+							   <!-- <option value="GBC">Gameboy Color</option> -->
 							   <option value="GC">Gamecube</option>
 							   <option value="N64">Nintendo 64</option>
 							   <option value="NS">Nintendo Switch</option>
@@ -216,13 +216,13 @@
 							   <option value="PS2">Playstation 2</option>
 							   <option value="PS3">Playstation 3</option>
 							   <option value="PS4">Playstation 4</option>
-							   <option value="PSP">PlayStation Portable (PSN)</option>
-							   <option value="PSV">PlayStation Vita (PSV)</option>
-							   <option value="SAT">Sega Saturn (SAT)</option>
+							   <!-- <option value="PSN">PlayStation Portable (PSN)</option> -->
+							   <!-- <option value="PSV">PlayStation Vita (PSV)</option> -->
+							   <!-- <option value="SAT">Sega Saturn (SAT)</option> -->
 							   <option value="Wii">Wii</option>
 							   <option value="WiiU">WiiU</option>
 							   <option value="X360">Xbox 360</option>
-							   <option value="XB">Xbox</option>
+							   <!-- <option value="XB">Xbox</option> -->
 							   <option value="XOne">Xbox One</option>
 							</select>
 						 </div>
@@ -404,7 +404,7 @@
                <!-- Main jQuery -->
                <script src="/static/js/jquery-1.11.1.min.js"></script>
                <!-- Single Page Nav -->
-               <!-- <script src="/static/js/jquery.singlePageNav.min.js"></script> -->
+               <script src="/static/js/jquery.singlePageNav.min.js"></script>
                <!-- Twitter Bootstrap -->
                <script src="/static/js/bootstrap.min.js"></script>
                <!-- jquery.fancybox.pack -->
@@ -434,6 +434,16 @@
                </script> 
                <!-- Custom Functions -->
                <script src="/static/js/custom.js"></script>
+			   
+			   <script>
+				$(document).ready(function() {
+					
+					$("#nav").click(function() {
+						$("a")[0].click();
+					});                            
+				});
+				</script>
+	
                <script type="/static/text/javascript">
                   $(function(){
                   	

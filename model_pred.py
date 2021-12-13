@@ -52,6 +52,6 @@ class ModelPred():
 
         distances, indices = model_knn.kneighbors(game_row, n_neighbors = n_neighbors)
         result = info_df.iloc[indices.flatten()]#.to_json(orient='records')
-        result = result[result['Platform'] == platform].to_json(orient='records')
+        result = result[(result['Platform'] == platform) & (result['Critic_Score'] > score)].to_json(orient='records')
 
         return result
