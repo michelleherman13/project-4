@@ -17,7 +17,7 @@ This project is a video game recommendation system based on k nearest neighbor c
 * Web app deployed using flask and via the cloud with Heroku 
 
 ### 4. Limitations  
-* We lost % of our original data due to so many columns having null values. 
+* We lost more than 90% of our original data due to so many columns having null values. 
 * Time constraint: If we had more time we would implement more filters and search features for the users to get an even more accurate recommendation. We also would have added live data to the home page under the videogame statistics counter.
 
 
