@@ -38,8 +38,6 @@ class ModelPred():
 
         platform = f'Platform_{platform}'
 
-        # df = df[df[platform] != 0]
-
         df_sub = df.drop(["game"], axis=1)
         model_knn = NearestNeighbors(metric='cosine', n_neighbors=n_neighbors)
         model_knn.fit(df_sub)
