@@ -1,6 +1,8 @@
 # Video Game Recommender
 
 This project is a video game recommendation system based on k nearest neighbor content based filtering. The goal of this application is to provide the user with useful gaming recommendation based on their preferences entered in web hosted user interface.
+<br>
+Check out our App here [Video Game Recommender](https://vgame-recommender.herokuapp.com/)
 
 ## Workflow
 ### 1. Preprocessing
