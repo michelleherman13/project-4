@@ -9,8 +9,7 @@ This project is a video game recommendation system based on k nearest neighbor c
 * We also prepared our data for machine learning application by transforming categorical data to numerical for testing using the get dummies function
 
 ### 2. Machine Learning & Model
-* The data was split into train and test sets 
-* We implemented the k-nearest neighbors model algorithm for our reccomender.
+* We implemented the k-nearest neighbors model algorithm for our recommender.
 <img width="243" alt="filtering" src="https://user-images.githubusercontent.com/85762953/145692582-93f31883-a716-4d9f-b3c1-6f2fea9c74d5.png">
 
 ### 3. Cloud Deployment 
